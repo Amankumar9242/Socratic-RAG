@@ -1,0 +1,60 @@
+TOPIC: Introduction to Derivatives (Calculus)
+
+Section 1: What is a Derivative?
+The derivative of a function measures how the function's output changes as its input
+changes. Formally, the derivative of f(x) at a point x is defined as the limit of the
+average rate of change over a shrinking interval:
+
+    f'(x) = lim (h -> 0) [f(x+h) - f(x)] / h
+
+This is also called the instantaneous rate of change, and geometrically it represents
+the slope of the tangent line to the curve y = f(x) at the point x.
+
+Section 2: The Power Rule
+For any function of the form f(x) = x^n, where n is a real number, the derivative is:
+
+    f'(x) = n * x^(n-1)
+
+Example: if f(x) = x^3, then f'(x) = 3x^2.
+Example: if f(x) = x, then f'(x) = 1, since x = x^1 and 1 * x^0 = 1.
+Example: if f(x) = 5 (a constant), then f'(x) = 0, because a constant function has
+a slope of zero everywhere - it never changes.
+
+Section 3: The Sum Rule
+The derivative of a sum of functions is the sum of their derivatives:
+
+    d/dx [f(x) + g(x)] = f'(x) + g'(x)
+
+This means you can differentiate each term of a polynomial separately and add the
+results together.
+
+Section 4: The Product Rule
+When differentiating the product of two functions f(x) and g(x), you cannot simply
+multiply the derivatives. Instead:
+
+    d/dx [f(x) * g(x)] = f'(x) * g(x) + f(x) * g'(x)
+
+A common mistake is assuming the derivative of a product is just the product of the
+derivatives - this is incorrect and is a frequent source of student errors.
+
+Section 5: The Chain Rule
+For composite functions, where one function is nested inside another, the chain rule
+states:
+
+    d/dx [f(g(x))] = f'(g(x)) * g'(x)
+
+In words: take the derivative of the outer function (leaving the inner function
+unchanged), then multiply by the derivative of the inner function.
+
+Example: if h(x) = (3x + 1)^2, treat (3x+1) as the inner function g(x) and squaring
+as the outer function f. Then f'(g(x)) = 2(3x+1) and g'(x) = 3, so
+h'(x) = 2(3x+1) * 3 = 6(3x+1) = 18x + 6.
+
+Section 6: Derivatives and Slopes of Tangent Lines
+Because f'(x) gives the slope of the tangent line at any point x, we can find the
+equation of the tangent line at a specific point x = a using:
+
+    y - f(a) = f'(a) * (x - a)
+
+This connects the algebraic process of differentiation to the geometric picture of
+a line just touching the curve at one point.
