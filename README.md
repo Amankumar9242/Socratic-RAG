@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 Socratic RAG Teaching Assistant
 
 A working RAG-based AI teaching assistant that doesn't just answer questions —
@@ -113,3 +114,5 @@ Some natural next steps if you want to go further:
 - Embeddings run **locally** (`sentence-transformers`, free, no API calls).
 - Only the generation step (guiding questions + leak-check) calls the
   Anthropic API, so each student turn costs roughly 2 small API calls.
+# Socratic-RAG
+>>>>>>> f9c904c18d123e835b83b4ecadc4f2519aceb182
